@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My GitHub Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 상단 네비게이션 -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">MyGitHub</div>
+      <nav>
+        <a href="#about">소개</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 히어로 섹션 -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div>
+        <h1>안녕하세요 👋</h1>
+        <p>
+          여기는 GitHub Pages로 만든 간단한 개인 페이지입니다.<br />
+          프로젝트, 포트폴리오, 수업용 데모 페이지 등 자유롭게 수정해서 사용하세요.
+        </p>
+        <a class="btn" href="#projects">프로젝트 보러가기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 소개 섹션 -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>소개</h2>
+      <p>
+        이 영역은 자기소개나 페이지의 목적을 적는 공간입니다.<br />
+        간단한 프로필, 사용하는 기술 스택, 관심 분야 등을 적어두면 좋아요.
+      </p>
+      <ul class="tags">
+        <li>#Python</li>
+        <li>#Machine Learning</li>
+        <li>#Web Development</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 프로젝트 섹션 -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2>프로젝트</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>프로젝트 1</h3>
+          <p>간단한 프로젝트 설명을 여기에 적습니다. GitHub 레포 링크를 같이 넣어도 좋아요.</p>
+          <a href="https://github.com/username/repo1" target="_blank" rel="noopener">
+            GitHub 바로가기
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>프로젝트 2</h3>
+          <p>두 번째 프로젝트 간단 설명. 수업 예제나 데모 페이지 설명으로 바꿔서 쓰면 됩니다.</p>
+          <a href="https://github.com/username/repo2" target="_blank" rel="noopener">
+            GitHub 바로가기
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>프로젝트 3</h3>
+          <p>여기는 여유 카드. 아직 프로젝트가 없어도 임시 텍스트로 채워두면 깔끔해 보입니다.</p>
+          <a href="#" target="_blank" rel="noopener">
+            자세히 보기
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 연락처 섹션 -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>
+        문의나 협업 제안은 아래 이메일로 보내주세요.
+      </p>
+      <p class="email">
+        <a href="mailto:example@email.com">example@email.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MyGitHub. Hosted on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script>
+    // 푸터에 연도 자동 출력
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
